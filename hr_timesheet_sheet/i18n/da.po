@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Danish (timesheet-12.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-27 07:48+0000\n"
+"POT-Creation-Date: 2020-07-29 08:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Danish <https://translation.odoo-community.org/projects/"
@@ -13,6 +13,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.10\n"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:535
+#, python-format
+msgid ""
+"You cannot delete a timesheet sheet which is already submitted or confirmed: "
+"%s"
+msgstr "Du kan ikke slette et tidsskema, som allerede er godkendt: %s"
+
+#. module: hr_timesheet_sheet
+#: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_kanban
+msgid "Delete"
+msgstr "Slet"
 
 #. module: hr_timesheet_sheet
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet.res_config_settings_view_form
@@ -112,14 +125,6 @@ msgstr ""
 #, fuzzy, python-format
 msgid "You cannot modify an entry in a confirmed timesheet sheet: %s"
 msgstr "Du kan ikke ændre en indtastning i et tidsskema der er bekræftet."
-
-#. module: hr_timesheet_sheet
-#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:535
-#, fuzzy, python-format
-msgid ""
-"You cannot delete a timesheet sheet which is already submitted or confirmed: "
-"%s"
-msgstr "Du kan ikke slette et tidsskema, som allerede er godkendt."
 
 #. module: hr_timesheet_sheet
 #: code:addons/hr_timesheet_sheet/models/account_analytic_line.py:59
@@ -906,11 +911,6 @@ msgstr "Vis navn"
 #: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
 msgid "Department"
 msgstr "Afdeling"
-
-#. module: hr_timesheet_sheet
-#: model_terms:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_kanban
-msgid "Delete"
-msgstr ""
 
 #. module: hr_timesheet_sheet
 #: selection:res.company,sheet_range:0
